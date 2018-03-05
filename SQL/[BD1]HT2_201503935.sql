@@ -5,7 +5,7 @@
 
 CREATE TABLE doctor (
     dc_id                  NUMBER NOT NULL,
-    dc_nombre              VARCHAR2(45 CHAR) NOT NULL,
+    dc_nombre              VARCHAR2(25 CHAR) NOT NULL,
     dc_especialidad        NUMBER,
     dc_anios_experiencia   NUMBER DEFAULT 1,
     pc_salario             NUMBER
@@ -19,16 +19,16 @@ ALTER TABLE doctor ADD CONSTRAINT ck_doctor_salario CHECK (pc_salario > 2500);
 
 CREATE TABLE farmacia (
     fm_id          NUMBER NOT NULL,
-    fm_nombre      VARCHAR2(50 CHAR) NOT NULL,
-    fm_direccion   VARCHAR2(50 CHAR),
-    fm_telefono    VARCHAR2(15 CHAR) NOT NULL
+    fm_nombre      VARCHAR2(25 CHAR) NOT NULL,
+    fm_direccion   VARCHAR2(30 CHAR),
+    fm_telefono    VARCHAR2(10 CHAR) NOT NULL
 );
 
 ALTER TABLE farmacia ADD CONSTRAINT farmacia_pk PRIMARY KEY ( fm_id );
 
 CREATE TABLE laboratorio (
     lb_id         NUMBER NOT NULL,
-    lb_nombre     VARCHAR2(50 CHAR),
+    lb_nombre     VARCHAR2(25 CHAR),
     lb_telefono   NUMBER NOT NULL
 );
 
@@ -47,8 +47,8 @@ ALTER TABLE lista_precios ADD CONSTRAINT ck_lista_precios_precio CHECK (lp_preci
 
 CREATE TABLE medicina (
     md_id                 NUMBER NOT NULL,
-    md_nombre_comercial   VARCHAR2(50 CHAR),
-    md_formula            VARCHAR2(50 CHAR) NOT NULL,
+    md_nombre_comercial   VARCHAR2(25 CHAR),
+    md_formula            VARCHAR2(30 CHAR) NOT NULL,
     md_laboratorio        NUMBER NOT NULL
 );
 
@@ -61,9 +61,9 @@ ALTER TABLE medicina ADD CONSTRAINT ck_medicina_nombre_formula CHECK (md_formula
 CREATE TABLE paciente (
     pc_id                 NUMBER NOT NULL,
     pc_fecha_nacimiento   DATE NOT NULL,
-    pc_nombre             VARCHAR2(50 CHAR) NOT NULL,
-    pc_telefono           VARCHAR2(15 CHAR) NOT NULL,
-    pc_direccion          VARCHAR2(30 CHAR),
+    pc_nombre             VARCHAR2(25 CHAR) NOT NULL,
+    pc_telefono           VARCHAR2(10 CHAR) NOT NULL,
+    pc_direccion          VARCHAR2(35 CHAR),
     pc_doctor_confianza   NUMBER NOT NULL
 );
 
