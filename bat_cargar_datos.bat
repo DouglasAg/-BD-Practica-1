@@ -6,4 +6,4 @@ sqlldr userid=douglas/Bases123 control=Control/ctl_laboratorio.ctl LOG=LOG/log_l
 sqlldr userid=douglas/Bases123 control=Control/ctl_medicina.ctl LOG=LOG/log_medicina.log BAD = BAD/bad_medicina.bad DISCARD = DISCARD/dis_medicina.dsc ;
 sqlldr userid=douglas/Bases123 control=Control/ctl_lista_precios.ctl LOG=LOG/log_lista_precios.log BAD = BAD/bad_lista_precios.bad DISCARD = DISCARD/dis_lista_precios.dsc ;
 sqlldr userid=douglas/Bases123 control=Control/ctl_prescripciones.ctl LOG=LOG/log_prescripciones.log BAD = BAD/bad_prescripciones.bad DISCARD = DISCARD/dis_prescripciones.dsc ;
-
+echo  ----------------  Datos cargados ---------------- 

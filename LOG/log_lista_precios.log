@@ -1,9 +1,9 @@
 
-SQL*Loader: Release 12.2.0.1.0 - Production on Sun Mar 4 14:58:19 2018
+SQL*Loader: Release 12.2.0.1.0 - Production on Sun Mar 4 19:00:10 2018
 
 Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
 
-Control File:   ctl_lista_precios.ctl
+Control File:   Control/ctl_lista_precios.ctl
 Data File:      /home/douglas/Documentos/Bases/Datos/LISTA_PRECIOS.txt
   Bad File:     BAD/bad_lista_precios.bad
   Discard File: DISCARD/dis_lista_precios.dsc 
@@ -45,8 +45,8 @@ Total logical records read:             1
 Total logical records rejected:         0
 Total logical records discarded:        0
 
-Run began on Sun Mar 04 14:58:19 2018
-Run ended on Sun Mar 04 14:58:19 2018
+Run began on Sun Mar 04 19:00:10 2018
+Run ended on Sun Mar 04 19:00:11 2018
 
-Elapsed time was:     00:00:00.24
+Elapsed time was:     00:00:00.28
 CPU time was:         00:00:00.03
