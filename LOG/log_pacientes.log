@@ -1,0 +1,58 @@
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Sun Mar 4 17:13:12 2018
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   Control/ctl_pacientes.ctl
+Data File:      /home/douglas/Documentos/Bases/Datos/PACIENTES.txt
+  Bad File:     BAD/bad_pacientes.bad
+  Discard File: DISCARD/dis_pacientes.dsc 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 2
+Errors allowed: 50
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table PACIENTE, loaded from every logical record.
+Insert option in effect for this table: INSERT
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+PC_ID                                1:10    10           CHARACTER            
+    SQL string for column : "TRIM(:pc_id)"
+PC_NOMBRE                           12:32    21           CHARACTER            
+    SQL string for column : "TRIM(:pc_nombre)"
+PC_FECHA_NACIMIENTO                 34:42     9           CHARACTER            
+    SQL string for column : "TO_DATE(:pc_fecha_nacimiento, 'DD-MM-YYYY', 'NLS_DATE_LANGUAGE=ENGLISH')"
+PC_TELEFONO                         44:52     9           CHARACTER            
+    SQL string for column : "TRIM(:pc_telefono)"
+PC_DIRECCION                        54:84    31           CHARACTER            
+    SQL string for column : "TRIM(:pc_direccion)"
+PC_DOCTOR_CONFIANZA                 86:97    12           CHARACTER            
+    SQL string for column : "TRIM(:pc_doctor_confianza)"
+
+
+Table PACIENTE:
+  1 Row successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                   6912 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          2
+Total logical records read:             1
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Sun Mar 04 17:13:12 2018
+Run ended on Sun Mar 04 17:13:12 2018
+
+Elapsed time was:     00:00:00.50
+CPU time was:         00:00:00.02

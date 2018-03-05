@@ -1,0 +1,3 @@
+ID         NOMBRECOMERCIAL       FORMULA                      LABORATORIO
+---------- --------------------- ---------------------------- ---------
+00001      AMOXICILINA           AMOX...                      1        

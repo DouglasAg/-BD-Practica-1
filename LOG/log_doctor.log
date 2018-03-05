@@ -1,0 +1,56 @@
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Sun Mar 4 16:49:19 2018
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   ctl_doctor.ctl
+Data File:      Datos/DOCTORES.txt
+  Bad File:     BAD/bad_doctor.bad
+  Discard File: DISCARD/dis_docror.dsc 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 2
+Errors allowed: 50
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table DOCTOR, loaded from every logical record.
+Insert option in effect for this table: INSERT
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+DC_ID                                1:10    10           CHARACTER            
+    SQL string for column : "TRIM(:dc_id)"
+DC_NOMBRE                           12:32    21           CHARACTER            
+    SQL string for column : "TRIM(:dc_nombre)"
+DC_ESPECIALIDAD                     34:42     9           CHARACTER            
+    SQL string for column : "TRIM(:dc_especialidad)"
+DC_ANIOS_EXPERIENCIA                44:52     9           CHARACTER            
+    SQL string for column : "TRIM(NVL(:dc_anios_experiencia,1))"
+PC_SALARIO                          54:64    11           CHARACTER            
+    SQL string for column : "TRIM(:pc_salario)"
+
+
+Table DOCTOR:
+  1 Row successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                   4736 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          2
+Total logical records read:             1
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Sun Mar 04 16:49:19 2018
+Run ended on Sun Mar 04 16:49:19 2018
+
+Elapsed time was:     00:00:00.42
+CPU time was:         00:00:00.02
