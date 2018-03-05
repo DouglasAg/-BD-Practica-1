@@ -1,0 +1,23 @@
+-- para inicial oracle --
+-- abrir terminal---
+sudo su
+su oracle
+cd $ORACLE_HOME
+cd network/admin
+lsnrctl start
+sqlplus /nolog
+connect /as sysdba
+startup
+
+
+-- para usar sqlldr y sqlplus desde la terminal sin entrar a usuario oracle ---
+sudo gedit /etc/bash.bashrc
+-- pegar hasta el final ---
+
+export ORACLE_HOME=/u01/app/oracle/product/12/dbhome_1
+export ORACLE_SID=SID
+export ORACLE_BASE=/u01/app/oracle
+export LD_LIBRARY_PATH=$ORACLE_HOME/lib:$LD_LIBRARY_PATH
+export PATH=$ORACLE_HOME/bin:$PATH
+
+-- reiniciar la pc ---
