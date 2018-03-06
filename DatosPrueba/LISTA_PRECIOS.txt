@@ -1,0 +1,3 @@
+FARMACIA	MEDICINA   PRECIO
+---------- ---------- ---------- 
+1          1          100           

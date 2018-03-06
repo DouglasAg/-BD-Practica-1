@@ -1,0 +1,3 @@
+ID         NOMBRE                ESPECIA 	EXPER 	 SALARIO
+---------- --------------------- --------- --------- ----------
+00001      CHADWICK STOCKMAN     1         1         10000

@@ -1,0 +1,3 @@
+ID         NOMBRE                FECHA_NAC TEEFONO 	 DIR_ACTUAL                      DOCTOR
+---------- --------------------- --------- --------- ------------------------------- ------------
+00001      ABIGAIL KESSEL        28-APR-76 12345670  ZONA 6, GUATEMALA CIUDAD        1       
