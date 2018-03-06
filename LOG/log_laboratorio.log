@@ -1,5 +1,5 @@
 
-SQL*Loader: Release 12.2.0.1.0 - Production on Sun Mar 4 19:00:10 2018
+SQL*Loader: Release 12.2.0.1.0 - Production on Tue Mar 6 17:28:19 2018
 
 Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
 
@@ -31,7 +31,7 @@ LB_TELEFONO                         34:42     9           CHARACTER
 
 
 Table LABORATORIO:
-  1 Row successfully loaded.
+  5 Rows successfully loaded.
   0 Rows not loaded due to data errors.
   0 Rows not loaded because all WHEN clauses were failed.
   0 Rows not loaded because all fields were null.
@@ -41,12 +41,12 @@ Space allocated for bind array:                   3072 bytes(64 rows)
 Read   buffer bytes: 1048576
 
 Total logical records skipped:          2
-Total logical records read:             1
+Total logical records read:             5
 Total logical records rejected:         0
 Total logical records discarded:        0
 
-Run began on Sun Mar 04 19:00:10 2018
-Run ended on Sun Mar 04 19:00:10 2018
+Run began on Tue Mar 06 17:28:19 2018
+Run ended on Tue Mar 06 17:28:19 2018
 
-Elapsed time was:     00:00:00.21
+Elapsed time was:     00:00:00.28
 CPU time was:         00:00:00.03
